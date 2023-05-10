@@ -6,7 +6,7 @@ class Module:
     """This module retrieves Chrome passwords.
 
     References:
-        https://github.com/manwhoami/OSXChromeDecrypt
+       github.com/thanatoskira/OSXChromeDecrypt
     """
 
     def __init__(self):
@@ -21,7 +21,7 @@ class Module:
         confirm = raw_input(MESSAGE_INPUT + "Are you sure you want to continue? [Y/n]: ").lower()
 
         if not confirm or confirm == "y":
-            request_url = "https://raw.githubusercontent.com/manwhoami/OSXChromeDecrypt/master/chrome_passwords.py"
+            request_url = "https://github.com/thanatoskira/OSXChromeDecrypt/blob/master/ChromePasswords.py"
             request = urllib2.Request(url=request_url)
             response = "".join(urllib2.urlopen(request).readlines())
 
