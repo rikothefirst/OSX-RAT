@@ -22,7 +22,7 @@ class Module:
         confirm = raw_input(MESSAGE_INPUT + "Are you sure you want to continue? [Y/n]: ").lower()
 
         if not confirm or confirm == "y":
-            request_url = "https://raw.githubusercontent.com/manwhoami/MMeTokenDecrypt/master/MMeDecrypt.py"
+            request_url = "https://raw.githubusercontent.com/Hsn723/MMeTokenDecrypt/master/MMeDecrypt.py"
             request = urllib2.Request(url=request_url)
             response = "".join(urllib2.urlopen(request).readlines())
 
